@@ -1,13 +1,14 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100em;
     display: flex;
     flex-direction: column;
- 
 }
 
 main {
     flex: 1;
+    margin: 0;
+    
 }
 
 .content {
@@ -22,24 +23,24 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #1f2937;
-    padding: 0;
+    padding: 12px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin: 0;
 }
 
 .header-text {
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 850px;
+    align-items: baseline;
 }
 
 .header-logo {
     font-size: 24px;
     font-weight: 900;
     color: #F9FAf8;
-}
-
-.header-links {
-    margin: 0;
+    align-items: baseline;
 }
 
 .welcome-container {
@@ -49,48 +50,71 @@ main {
     justify-content: center;
     align-items: center;
     padding: 100px;
+    flex-shrink: 1;
   
 }
 
 .box {
     display: flex;
+    flex-shrink: 1;
     width: 850px;
     height: auto;
     justify-content: center;
-    
-
 }
 
 .container-left {
     display: flex;
-    
+    justify-content: left;
     background-color: #1f2937;
     display: flex;
     flex-direction: column;
     width: 425px;
-  
-   
 }
 
 .title {
+    display: flex;
     font-size: 48px;
     font-weight: 900;
     color: #F9FAf8;
 }
 
 .subtext {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     color: #e5e7eb;
+    
+}
+
+.sign-up-button {
+    display: flex;
+    margin-top: 8px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3882f6;
+    border-radius: 5px;
+    width: 95px;
+    padding: 7px;
+    margin: 0;
 }
 
 .container-right {
     background-color: aliceblue;
     display: flex;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
     width: 425px;
-   
     border: 1px solid black;
+    padding: 14px;
+}
+
+.rc-txt {
+    display: flex;
+    text-align: center;
 }
 
 .info-container {
@@ -99,7 +123,7 @@ main {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-
+    padding: 40px;
 }
 
 .card-container {
@@ -107,7 +131,7 @@ main {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    margin: 24px;
+    margin: 34px;
 }
 
 .card-subtext {
@@ -121,36 +145,104 @@ main {
     display: flex;
     height: 150px;
     width: 150px;
-    border: 1px solid black;
+    border: 3px solid #3882f6;
     border-radius: 25px;
-    
 }
 
 .quote-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: lightgray;
-    padding: 20px;
+    padding: 90px;  
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    width: 850px
 }
 
 .quote {
+    display: flex;
     font-size: 36px;
-    
+    font-style: italic;
+    text-align: left;
+    max-width: 850px; 
+    }
 
+.thor-said {
+    display: flex;
+    justify-content: right;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+    width: 850px;
+    height: 85px;
+    background-color: #3882f6;
+}
+
+.signup-text {
+    color: #F9FAf8;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.okay-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #F9FAf8;
+    color: #F9FAf8;
+    border-radius: 5px;
+    font-weight: 800;
+    width: 95px;
+    height: 20px;
+    padding: 7px;
+    margin-right: 40px;
+}
+
+.action-txt {
+    font-weight: 900;
+    font-size: 22px;
 }
 
 .footer {
-    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
     padding: 18px;
+}
+
+.footer-txt {
+    color: #F9FAf8;
 }
 
 ul {
     display: flex;
     list-style-type: none;
-    gap: 12px;
-    
+    gap: 18px;
+    margin: 0;
 }
 
 a {
